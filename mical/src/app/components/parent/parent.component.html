@@ -1,0 +1,7 @@
+<app-child
+     [buttonText]="stringToPass"
+     [inputValue]="defaultFormValue"
+     (childEmitData)="getText($event)"
+>
+</app-child>
+{{recivedText}}
