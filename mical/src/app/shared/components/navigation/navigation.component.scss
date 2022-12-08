@@ -1,0 +1,17 @@
+@import '../../../../assets/scss/variables.scss';
+
+.navigation{
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: $color-white;
+list-style: none;
+    &__menu{
+    display: flex;
+    color: $color-white;
+    list-style: none;
+    }
+    &__image {
+        width: 100px;
+    }
+}

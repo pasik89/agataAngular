@@ -1,0 +1,15 @@
+<div class="carousel-container">
+    <ul class="carousel-container__list">
+            <app-carousel-item
+            *ngFor="let carouselItem of carouselItems"
+            [carouselItem]="carouselItem"
+            >
+            </app-carousel-item>
+          
+    </ul>
+    <button class="carousel-container__btn">></button>
+</div>
+
+<!-- <button (click)="changeText()">zmien karuzela</button>
+
+{{ testowa | async }} -->

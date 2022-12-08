@@ -1,0 +1,12 @@
+<nav class="navigation">
+    <img class="navigation__image" src="../../../assets/img/logo.png" alt="logo"/>
+
+    <ul class="navigation__menu">
+        <app-navi-item 
+            *ngFor="let navigationItem of navigationItems"
+            [navigationItem]="navigationItem"
+            >
+            
+        </app-navi-item>
+    </ul>
+</nav>

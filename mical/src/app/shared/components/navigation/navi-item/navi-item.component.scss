@@ -1,0 +1,28 @@
+@import '../../../../../assets/scss/variables.scss';
+
+.item {
+    padding: 0 15px;
+    transition: .3s;
+
+    &__anchor {
+        text-decoration: none;
+        color: unset; 
+    }
+}
+
+// .item:hover {
+    // color: $main-green;
+// } 
+.color {
+    color: $main-green;
+
+}
+
+.main-green {
+    color: $main-green;
+}
+
+
+
+
+  

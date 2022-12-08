@@ -1,0 +1,25 @@
+@import '../../../../../assets/scss/variables.scss';
+
+.carousel-item {
+    text-align: center;
+    box-shadow: 0 0 20px 2px $border-color;
+    background: $color-white;
+    margin: 0 3%;
+    padding: 20px 4px;
+
+    &__title{
+        text-transform: uppercase;
+        font-weight: normal;
+        }
+
+    &__paragraph{ 
+        text-transform: lowercase;
+        color: lighten($color: $color-black, $amount: 30%);
+        }
+
+    &__image {
+        padding: 10px;
+        width: 80px;
+    }
+
+}

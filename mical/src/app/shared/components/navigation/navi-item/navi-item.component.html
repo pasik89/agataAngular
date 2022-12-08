@@ -1,0 +1,6 @@
+<li class="item" [ngClass] = "navigationItem.icon ? 'main-green' : ''" appHighlight>
+    <a [routerLink]="[navigationItem.path]" class="item__anchor">
+        <fa-icon *ngIf="navigationItem?.icon" [icon]="navigationItem?.icon"></fa-icon>
+        {{navigationItem.label}}
+    </a>
+</li>

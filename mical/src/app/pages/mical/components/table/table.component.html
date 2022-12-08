@@ -1,0 +1,27 @@
+<section class="client-list">
+    <button class="client-list__add-button">Add Client</button>
+    <table class="client-list__table" border="1">
+      <thead class="client-list__table__head">
+        <tr class="client-list__table__head__row">
+          <td class = "client-list__table__body__title">Full Name</td>
+          <td class = "client-list__table__body__title">Email</td>
+          <td class = "client-list__table__body__title">Phone number</td>
+          <td class = "client-list__table__body__title">Message</td>
+          <td class = "client-list__table__body__title">Id</td>
+        </tr>
+      </thead>
+      <tbody class="client-list__table__body">
+        <tr *ngFor="let tableData of (tableDatas | async)">
+            <td>{{tableData?.fullName}}</td>
+            <td>{{tableData?.phoneNumber | phoneNumber: 3}}</td>
+            <td>{{tableData?.email}}</td>
+            <td>{{tableData?.message}}</td>
+            <td>{{tableData?.id}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <!-- <button (click)="changeText()">zmien tabela</button>
+
+{{ '100000000000' | phoneNumber: 3 }}
+{{ testowa }} -->
